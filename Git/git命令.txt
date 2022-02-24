@@ -1,0 +1,26 @@
+# 新建github仓库
+略
+
+# 安装git 
+git config --global user.name "roy"
+git config --global user.email  "lixianji85@sina.com"
+git conif -l
+
+# 设置ssh配置, 邮箱与github上填写的保持一致
+ssh-keygen -t rsa -C "lixianji85@sina.com"
+
+# 把id_rsa.pub同步到github上
+略
+
+// 获取远程仓库数据并初始化本地git
+git clone git@github.com:fanghuaxing/CoderNotes.git
+
+# git操作
+git add file
+git commit -m "message"
+git push -u origin main
+
+
+# Q1 提交时,弹验证框  需要修正url为ssh链接
+git remote set-url origin git@github.com:fanghuaxing/CoderNotes.git
+
