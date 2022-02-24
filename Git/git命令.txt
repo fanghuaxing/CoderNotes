@@ -6,7 +6,7 @@ git config --global user.name "roy"
 git config --global user.email  "lixianji85@sina.com"
 git conif -l
 
-# 设置ssh配置, 邮箱与github上填写的保持一致
+# 设置ssh配置, 邮箱与github上填写的保持一致,注意需要记住设置的passphrase
 ssh-keygen -t rsa -C "lixianji85@sina.com"
 
 # 把id_rsa.pub同步到github上
@@ -15,7 +15,7 @@ ssh-keygen -t rsa -C "lixianji85@sina.com"
 // 获取远程仓库数据并初始化本地git
 git clone git@github.com:fanghuaxing/CoderNotes.git
 
-# git操作
+# git操作, push时,需要填写passphrase
 git add file
 git commit -m "message"
 git push -u origin main
